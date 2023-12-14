@@ -36,7 +36,7 @@ int main() {
 
     //Use the custom function to calculate and print the cube root
     double cube_root_value = cube_root(number);
-    printf("The cube root of %.2lf is %.2lf\n", number, cube_root_value);
+    printf("The cube root of %.2lf is %.2lf.\n", number, cube_root_value);
 
     return 0;
 }

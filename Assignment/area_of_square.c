@@ -10,7 +10,7 @@ int main() {
 
     //compute the area of said square 
     area = (length * length);
-    printf("The area of the square is %d.\n", area);
+    printf("The area of the square is %d sq. units.\n", area);
 
     return 0;
 }
