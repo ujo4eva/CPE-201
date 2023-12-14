@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main()  {
-    int num1, num2, num3, largest;
+    int num1, num2, num3;
 
     //get user input for the three numbers
     printf("Enter the first number: ");
