@@ -9,7 +9,7 @@ int main() {
     scanf("%d", &length);
 
     //compute the area of said square 
-    area = length * length
+    area = (length * length);
     printf("The area of the square is %d.\n", area);
 
     return 0;
