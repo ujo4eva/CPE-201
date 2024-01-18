@@ -6,31 +6,52 @@ int main() {
     char operation;
     int decimal_places = 10;
 
-    printf("Enter the first number: ");
     scanf("%lf", &num1);
-
-    printf("Enter the operator (+, -, *, /): ");
     scanf(" %c", &operation);
-
-    printf("Enter the second number: ");
     scanf("%lf", &num2);
+
 
     switch (operation) {
         case '+':
 
-        printf("%lf + %lf = %.*lf", num1, num2, decimal_places, num1 + num2);
+            if (fmod(num1 + num2, 1.0) == 0) {
+
+                printf("%.0lf + %.0lf = %.0lf", num1, num2, num1 + num2);
+
+            } else {
+
+                printf("%lf + %lf = %.*lf", num1, num2, decimal_places, num1 + num2);
+
+            }
+
 
         break;
 
         case '-':
 
-        printf("%lf - %lf = %.*lf", num1, num2, decimal_places, num1 - num2);
+            if (fmod(num1 - num2, 1.0) ==0) {
+
+                printf("%.0lf - %.0lf = %.0lf", num1, num2, num1 - num2);
+
+            } else {
+
+                printf("%lf - %lf = %.*lf", num1, num2, decimal_places, num1 - num2);
+
+            }
 
         break;
 
         case '*':
 
-        printf("%lf * %lf = %.*lf", num1, num2, decimal_places, num1 * num2);
+            if (fmod(num1 * num2, 1.0) ==0) {
+
+                printf("%.0lf * %.0lf = %.0lf", num1, num2, num1 * num2);
+
+            } else {
+
+                printf("%lf * %lf = %.*lf", num1, num2, decimal_places, num1 * num2);
+
+            }
 
         break;
 
@@ -40,15 +61,23 @@ int main() {
 
                 printf("Them dey divide by zero for your village abi?\n");
 
+            } else
+                
+            if (fmod(num1 / num2, 1.0) ==0) {
+
+                printf("%.0lf / %.0lf = %.0lf", num1, num2, num1 / num2);
+            
             } else {
+
                 printf("%lf / %lf = %.*lf", num1, num2, decimal_places, num1 / num2);
+            
             }
 
         break;
 
             default:
 
-                printf("Chill for me biko, i can only do +, -, *, and / right now.");
+                printf("Chill for me biko, I can only do +, -, *, and / right now.");
 
 
     }
