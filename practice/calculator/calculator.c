@@ -4,7 +4,7 @@
 int main() {
     double num1, num2;
     char operation;
-    int decimal_places = 10;
+    int decimal_places = 4;
 
     scanf("%lf", &num1);
     scanf(" %c", &operation);
