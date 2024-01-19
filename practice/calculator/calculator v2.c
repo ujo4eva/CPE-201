@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
+#include <stdbool.h>
 
 void main() {
     double numbers[100];
@@ -29,8 +30,6 @@ void main() {
         token = strtok(NULL, " ");
 
         }
-
-    }
 
         for (int i = 0; i < op_count; i++) {
 
@@ -89,9 +88,14 @@ void main() {
 
         printf("Result: %.*lf", decimal_places, result);
 
+        printf("\nEnter another calculation (or 'q' to quit): ");
+    char choice = fgetc(stdin);
+    if (choice == 'q') {
+        shouldContinue = false;  // Set control variable to break the loop
+    }
 
+    }
 
-    
 
     return;
 
