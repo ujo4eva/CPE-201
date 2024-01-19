@@ -35,20 +35,20 @@ void main() {
 
             if (operations[i] != '+' &&operations[i] != '-' &&operations[i] != '*' &&operations[i] != '/') {
                 printf("Invalid Operation: %c\n", operations[i]);
-                return;
+                continue;
             } 
         }
 
         if (num_count - op_count !=1) {
 
             printf("Invalid Input, unbalanced numbers and operations\n");
-            return;
+            continue;
         }
 
         for (int i = 0; i < op_count; i++) {
             if (operations[i] == '/' &&numbers[i + 1] == 0) {
                 printf("Them dey divide by zero for your village abi?\n");
-                return;
+                continue;
             }
         }
         
