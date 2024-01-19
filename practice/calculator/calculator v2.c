@@ -9,8 +9,9 @@ void main() {
     int op_count = 0;
     char input_string[100];
     int decimal_places = 4;
+    bool shouldContinue = true;
 
-    while (true) {
+    while (shouldContinue) {
 
         printf("Enter numbers and operations (separate them with spaces please): ");
 
@@ -87,6 +88,9 @@ void main() {
         }
 
         printf("Result: %.*lf", decimal_places, result);
+
+
+
     
 
     return;
