@@ -13,7 +13,7 @@ int main() {
     //loop through all the characters entered by the user
 
     for(int i=0; i < MAX_SIZE; i++) {
-        if(userInput[i]=="a" || userInput[i]=="0" || userInput[i]=="u") {
+        if(userInput[i]=="a" || userInput[i]=="e" || userInput[i]=="i" || userInput[i]=="o" || userInput[i]=="u") {
             count_vowel ++;
             printf("%s\t", userInput[i]);
         }
