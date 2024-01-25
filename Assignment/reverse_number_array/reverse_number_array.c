@@ -39,6 +39,6 @@ int main() {
 
     printf("\n:)\n");
 
-    return;
+    return 0;
 
 }
