@@ -19,8 +19,6 @@ int main() {
         }
     }
 
-    printf("\n"),
-
     printf("Total number of vowels in %s is: %d.\n", userInput, count_vowel);
 
     return 0;
