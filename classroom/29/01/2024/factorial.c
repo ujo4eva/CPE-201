@@ -1,8 +1,10 @@
 #include <stdio.h>
 
-int n, i, result = 1;
+int n;
 
 int factorial() {
+
+    int i, result = 1;
 
     if (n < 0) {
 
