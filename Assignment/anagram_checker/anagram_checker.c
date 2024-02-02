@@ -33,7 +33,7 @@ int is_anagram(const char *str1, const char *str2) {
     }
 
     //compare the frequency arrays
-    for (int i = 0; i < 256, i++;) {
+    for (int i = 0; i < 256; i++) {
 
         if (freq1[i] != freq2[i]) {
 
@@ -52,10 +52,10 @@ int main() {
 
     char str1[100], str2[100];
 
-    printf("Enter anything:\n ");
+    printf("Enter anything: ");
     fgets(str1, 100, stdin);
 
-    printf("Now enter something else:\n ");
+    printf("Now enter something else: ");
     fgets(str2, 100, stdin);
 
     if (is_anagram(str1, str2)) {

@@ -46,7 +46,9 @@ int main() {
 
     if (! foundarmstrong) {
         printf("No Armstrong numbers found in the given range.\n");
+        return 1;
     }
+
 
     return 0;
 
