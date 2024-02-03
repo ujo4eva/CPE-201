@@ -35,7 +35,7 @@ int main() {
     printf("Enter the ending number: ");
     scanf("%d", &end);
 
-    printf("The Armstrong numbers be5tween %d and %d are:\n", start, end);
+    printf("The Armstrong numbers between %d and %d are:\n", start, end);
 
     for (i = start; i<= end; ++i) {
         if (is_armstrong(i)) {
