@@ -16,11 +16,11 @@ int main() {
 
             if (fmod(num1 + num2, 1.0) == 0) {
 
-                printf("%.0lf + %.0lf = %.0lf", num1, num2, num1 + num2);
+                printf("%lf + %lf = %lf", num1, num2, num1 + num2);
 
             } else {
 
-                printf("%lf + %lf = %.*lf", num1, num2, decimal_places, num1 + num2);
+                printf("%lf + %lf = %lf", num1, num2, num1 + num2);
 
             }
 
@@ -31,11 +31,11 @@ int main() {
 
             if (fmod(num1 - num2, 1.0) ==0) {
 
-                printf("%.0lf - %.0lf = %.0lf", num1, num2, num1 - num2);
+                printf("%lf - %lf = %lf", num1, num2, num1 - num2);
 
             } else {
 
-                printf("%lf - %lf = %.*lf", num1, num2, decimal_places, num1 - num2);
+                printf("%lf - %lf = %lf", num1, num2, num1 - num2);
 
             }
 
@@ -45,11 +45,11 @@ int main() {
 
             if (fmod(num1 * num2, 1.0) ==0) {
 
-                printf("%.0lf * %.0lf = %.0lf", num1, num2, num1 * num2);
+                printf("%lf * %lf = %lf", num1, num2, num1 * num2);
 
             } else {
 
-                printf("%lf * %lf = %.*lf", num1, num2, decimal_places, num1 * num2);
+                printf("%lf * %lf = %lf", num1, num2, num1 * num2);
 
             }
 
@@ -65,11 +65,11 @@ int main() {
                 
             if (fmod(num1 / num2, 1.0) ==0) {
 
-                printf("%.0lf / %.0lf = %.0lf", num1, num2, num1 / num2);
+                printf("%lf / %lf = %lf", num1, num2, num1 / num2);
             
             } else {
 
-                printf("%lf / %lf = %.*lf", num1, num2, decimal_places, num1 / num2);
+                printf("%lf / %lf = %lf", num1, num2, num1 / num2);
             
             }
 
