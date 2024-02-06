@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <stddef.h>
+#include <string.h>
 #include <ctype.h>
 
 int is_anagram(const char *str1, const char *str2) {
+
     
     int freq1[256] = {0};  //declare frequency array for first string
     int freq2[256] = {0};  //declare frequency array for second string
