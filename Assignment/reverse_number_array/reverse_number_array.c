@@ -22,13 +22,13 @@ int main() {
     scanf("%d", &num_elements);
 
     if (num_elements > 100) {
-        printf("You entered too many numbers genius.");
+        printf("Sorry, can't have more than 100 elements.");
         return 1; //indicate an error
     }
 
     printf("Enter your chosen numbers: ", num_elements);
-    for (int i = 0; i < num_elements; i++) {
-        scanf("%d", &num_array[i]);
+        for (int i = 0; i < num_elements; i++) {
+            scanf("%d", &num_array[i]);
     }
 
     reverse(num_array, 0, num_elements - 1);
