@@ -39,20 +39,26 @@ void print_prime (int start, int end) {
 
         int isPrime = 1;
 
+        if (i == 1) {
+
+            isPrime = 0;
+
+            continue;
+
+        }
+
         for (int j = 2; j <= sqrt(i); j++) {
 
             if (i % j == 0) {
 
                 isPrime = 0;
-                
+
+                break;
 
             }
-
-            break;
-
         }
 
-        if (isPrime = 1) {
+        if (isPrime) {
 
             printf("%d ", i);
 
