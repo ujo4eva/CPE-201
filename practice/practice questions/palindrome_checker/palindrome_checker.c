@@ -1,18 +1,24 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 void reverse (char string[256], int start, int end) {
 
     char reversed[256];
 
-    for (int i = start; i <= end; i++) {
+    for (int i = end; i >= start; i--) {
 
-        for (int j = end; j >= start; j--) {
+        for (int j = start; j <= end; j++) {
 
-            reversed[j] = string[i];
+            if (isalnum (string[i])) {
 
+                reversed[j] = string[i];
+
+            }
         }
     }
+
+    printf("%s\n%s", string, reversed);
 
     isPalindrome(string, reversed);
 
@@ -41,6 +47,8 @@ int main () {
 
     printf("Enter a string:\n");
     fgets(str, 256, stdin);
+
+    printf("%s", str);
 
     reverse(str, 0, strlen(str) - 1);
 
