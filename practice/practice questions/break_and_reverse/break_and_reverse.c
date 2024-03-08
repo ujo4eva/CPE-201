@@ -1,13 +1,9 @@
 #include <stdio.h>
+#include <string.h>
 
 int main () {
 
-    int number;
-
-    printf("Enter a 5-digit number:\n");
-    scanf("%d", &number);
-
-     
+    //FUCK STRING MANIPULATION
 
     return 0;
 
